@@ -62,7 +62,7 @@ menu themMonAn() //them mon an vao MENU
   return tmp;
 }
 
-void themMonAnVaoDanhSach(menu &a) //Them mon an vao list
+void themMonAnVaoDanhSach(menu &a)
 {
   menu tmp = themMonAn();
   if(a == NULL)
@@ -204,7 +204,7 @@ order goiMonAn() //goi mon an tu MENU
   return tmp;
 }
 
-void goiMonTrongDanhSach(order &b) //Goi mon trong list cua Menu
+void goiMonTrongDanhSach(order &b)
 {
   order tmp = goiMonAn();
   if(b == NULL)
@@ -312,7 +312,7 @@ void thanhTienOrder(menu a, order &b)
   }
 }
 
-bill themHoaDon()
+bill themHoaDon() //tao hoa don cho danh sach phieu thanh toan
 {
   phieuThanhToan PTT;
   cout<<"Nhap ma phieu can luu: \n";
@@ -416,6 +416,7 @@ void sapXepBill(bill &c)
     p->PTT.Sum = tmp1;
   }
 }
+
 int main()
 {
   menu Head = NULL;
